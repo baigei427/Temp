@@ -1,0 +1,33 @@
+不区分大小写
+
+没有顶级语句
+只有定义变量和函数之类的
+PRINT       打印数组时纸打印第一个
+
+
+CallExpression 调用函数
+Expression     表达式
+DEFINE 在 ERB 忽略 在 ERH 正常
+函数定义：  后定义的覆盖先定义的
+            函数可以用()或,
+           以函数为分隔如：“@xxx ... \n @yyy ,,,”...为xxx函数的内容
+           在参数时先定义(数组用REF)
+            #FUNCTION表示该函数返回一个数字  \用RETURNF返回
+            #FUNCTION(S)返回一个字符串      \用RETURNF返回
+            如果省略RETURNF参数，或者在没有RETURNF的情况下到达函数的终点，则返回0或""
+IF 判断     IF,ELSE,ENDIF,ELSEIF,SIF
+            IF,ELSE,ELSEIF 像python?
+            IF - *ELSE(否则) - ELSEIF - ENDIF
+            除了IF其他都不需要关心ENDIF
+            没有ENDIF => 报错
+变量        https://miswanting.github.io/ecd/translation/Custom_Variable.html
+            类型REF(引用+数组(一维数组可以省略逗号)),CONST,DYNAMIC 
+            如果未定义，则为1.
+#DIM（S） <Variable Name>",(number)"*3
+
+
+标准 BCP-47
+
+https://blog.csdn.net/6346289/article/details/121368899
+https://resources.jointjs.com/demos/javascript-ast
+https://astexplorer.net/

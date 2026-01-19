@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本地文件夹管理器</title>
+    <style>
+        /* 不使用CSS装饰，仅使用浏览器默认样式 */
+    </style>
+</head>
+<body>
+    <h1>本地文件夹管理器</h1>
+    
+    <div>
+        <h2>选择文件夹</h2>
+        <input type="file" id="folderInput" webkitdirectory directory multiple>
+        <button onclick="clearFiles()">清空文件列表</button>
+    </div>
+    
+    <div>
+        <h2>文件列表</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>文件名</th>
+                    <th>类型</th>
+                    <th>大小</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="fileList">
+                <!-- 文件列表将在这里动态生成 -->
+            </tbody>
+        </table>
+    </div>
+    
+    <div>
+        <h2>文件预览</h2>
+        <textarea id="filePreview" rows="10" cols="80" readonly placeholder="选择文件以预览内容"></textarea>
+    </div>
+    
+    <div>
+        <h2>文件操作</h2>
+        <div>
+            <input type="text" id="newFileName" placeholder="新文件名">
+            <button onclick="renameFile()">重命名选中文件</button>
+            <button onclick="deleteFile()">删除选中文件</button>
+        </div>
+    </div>
+
+    <script>
+        // 存储选中的文件
+        let selectedFiles = [];
+        let selectedFileIndex = -1;
+        
+        // 监听文件夹选择
+        document.getElementById('folderInput').addEventListener('change', function(e) {
+            selectedFiles = Array.from(e.target.files);
+            displayFiles();
+        });
+        
+        // 显示文件列表
+        function displayFiles() {
+            const fileListElement = document.getElementById('fileList');
+            fileListElement.innerHTML = '';
+            
+            selectedFiles.forEach((file, index) => {
+                const row = document.createElement('tr');
+                
+                // 文件名
+                const nameCell = document.createElement('td');
+                nameCell.textContent = file.name;
+                nameCell.onclick = () => selectFile(index);
+                row.appendChild(nameCell);
+                
+                // 文件类型
+                const typeCell = document.createElement('td');
+                typeCell.textContent = file.type || '未知';
+                row.appendChild(typeCell);
+                
+                // 文件大小
+                const sizeCell = document.createElement('td');
+                sizeCell.textContent = formatFileSize(file.size);
+                row.appendChild(sizeCell);
+                
+                // 操作按钮
+                const actionCell = document.createElement('td');
+                const previewButton = document.createElement('button');
+                previewButton.textContent = '预览';
+                previewButton.onclick = () => previewFile(index);
+                actionCell.appendChild(previewButton);
+                
+                row.appendChild(actionCell);
+                fileListElement.appendChild(row);
+            });
+        }
+        
+        // 选择文件
+        function selectFile(index) {
+            selectedFileIndex = index;
+            // 清除之前的选择
+            const rows = document.querySelectorAll('#fileList tr');
+            rows.forEach(row => row.style.backgroundColor = '');
+            
+            // 高亮当前选择
+            if (rows[index]) {
+                rows[index].style.backgroundColor = '#e0e0e0';
+            }
+        }
+        
+        // 预览文件内容
+        function previewFile(index) {
+            const file = selectedFiles[index];
+            const previewElement = document.getElementById('filePreview');
+            
+            if (file.type && file.type.startsWith('text/')) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    previewElement.value = e.target.result;
+                };
+                reader.readAsText(file);
+            } else {
+                previewElement.value = '无法预览此文件类型: ' + (file.type || '未知');
+            }
+            
+            selectFile(index);
+        }
+        
+        // 重命名文件
+        function renameFile() {
+            if (selectedFileIndex === -1) {
+                alert('请先选择一个文件');
+                return;
+            }
+            
+            const newName = document.getElementById('newFileName').value.trim();
+            if (!newName) {
+                alert('请输入新文件名');
+                return;
+            }
+            
+            // 在实际应用中，这里需要调用文件系统API来重命名文件
+            // 由于浏览器安全限制，我们只能模拟这个操作
+            const oldFile = selectedFiles[selectedFileIndex];
+            const newFile = new File([oldFile], newName, { type: oldFile.type });
+            selectedFiles[selectedFileIndex] = newFile;
+            
+            displayFiles();
+            document.getElementById('newFileName').value = '';
+            alert(`文件已重命名为: ${newName}`);
+        }
+        
+        // 删除文件
+        function deleteFile() {
+            if (selectedFileIndex === -1) {
+                alert('请先选择一个文件');
+                return;
+            }
+            
+            if (confirm('确定要删除此文件吗？')) {
+                // 在实际应用中，这里需要调用文件系统API来删除文件
+                // 由于浏览器安全限制，我们只能模拟这个操作
+                selectedFiles.splice(selectedFileIndex, 1);
+                selectedFileIndex = -1;
+                
+                displayFiles();
+                document.getElementById('filePreview').value = '';
+                alert('文件已删除');
+            }
+        }
+        
+        // 清空文件列表
+        function clearFiles() {
+            selectedFiles = [];
+            selectedFileIndex = -1;
+            displayFiles();
+            document.getElementById('filePreview').value = '';
+            document.getElementById('folderInput').value = '';
+        }
+        
+        // 格式化文件大小
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+    </script>
+</body>
+</html>

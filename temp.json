@@ -1,0 +1,5003 @@
+{
+  "Program": {
+    "body": [
+      {
+        "type": "FunctionDeclaration",
+        "name": "ITEMSTOCK",
+        "params": [
+          "ARG",
+          "値段"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "値段",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CHOICE",
+        "params": [
+          "ARGS:0",
+          "ARGS:1",
+          "ARGS:2",
+          "ARGS:3",
+          "ARGS:4",
+          "ARGS:5",
+          "ARGS:6",
+          "ARGS:7",
+          "ARGS:8",
+          "ARGS:9",
+          "ARGS:10"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ASK_M",
+        "params": [
+          "ARGS:0",
+          "ARG:0",
+          "ARGS:1",
+          "ARG:1",
+          "ARGS:2",
+          "ARG:2",
+          "ARGS:3",
+          "ARG:3",
+          "ARGS:4",
+          "ARG:4",
+          "ARGS:5",
+          "ARG:5",
+          "ARGS:6",
+          "ARG:6",
+          "ARGS:7",
+          "ARG:7",
+          "ARGS:8",
+          "ARG:8"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "選択肢上限",
+            "isString": false,
+            "modifiers": "CONST"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PREV_REDRAW",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PAY_YEN_OR_CM",
+        "params": [
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_REVISION",
+        "params": [
+          "ARG:0",
+          "上限",
+          "上昇率"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "上限",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "上昇率",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_REVISION2",
+        "params": [
+          "ARG:0",
+          "上限",
+          "上昇率"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "上限",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "上昇率",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_REVISION3",
+        "params": [
+          "num",
+          "TH:0",
+          "TH:1",
+          "TH:2"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "TH",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "num",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINT_BASE",
+        "params": [
+          "ARGS",
+          "ARG:0",
+          "ARG:1",
+          "ARG:2"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "DRAW_INFORMATIONLINE",
+        "params": [
+          "ARGS",
+          "ARG",
+          "ARG:1"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "EQUAL",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "MINUS",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINT_EMUNERATE",
+        "params": [
+          "表示:1",
+          "条件:1",
+          "表示:2",
+          "条件:2",
+          "表示:3",
+          "条件:3",
+          "表示:4",
+          "条件:4",
+          "表示:5",
+          "条件:5"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "表示",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "条件",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "TEXTR",
+        "params": [
+          "ARGS",
+          "ARGS:1",
+          "ARGS:2",
+          "ARGS:3",
+          "ARGS:4",
+          "ARGS:5",
+          "ARGS:6"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "L_RESULT",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CHOICES",
+            "isString": true,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_ARRAY",
+            "isString": true,
+            "modifiers": "DYNAMIC"
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ONCE",
+        "params": [
+          "ARGS",
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "FIRSTTIME",
+        "params": [
+          "ARGS",
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "EXP_UP",
+        "params": [
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "INVAGINA",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "INANAL",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "HETEROSEX",
+        "params": [
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "NameToID",
+        "params": [
+          "ARGS"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_TARGETNUM",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "IN_ROOM_MEMBER",
+        "params": [
+          "ARGS",
+          "ARG",
+          "ARGS:1",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "TARGETSET_CHECK",
+        "params": [
+          "OP"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "OP",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TARGET_CNT",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "SWAP_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "TARGETSET_CHACK",
+        "params": [
+          "ARGS"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "性技補正",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "RECOVER",
+        "params": [
+          "ARG",
+          "回復量",
+          "ARGS",
+          "ARGS:1"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "BASE_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "回復量",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "RECOVER_PERMIL",
+        "params": [
+          "ARG",
+          "回復割合",
+          "ARGS",
+          "回復速度の影響",
+          "ARGS:1"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "回復割合",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "回復速度の影響",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "回復量",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "RECOVER_PERMIL_BOTH",
+        "params": [
+          "ARG",
+          "回復割合",
+          "ARGS",
+          "回復速度の影響",
+          "ARGS:1"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "回復割合",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "回復速度の影響",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CHECKE_BASE",
+        "params": [
+          "ARG",
+          "ARGS"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "BUFF_BASE",
+        "params": [
+          "ARG",
+          "強化能力",
+          "変動値",
+          "メッセージ"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "変動値",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "強化能力",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "メッセージ",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "BUFF_RESET",
+        "params": [],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CHANGE_CFLAG",
+        "params": [
+          "変動フラグ",
+          "対象",
+          "変動数"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "変動フラグ",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "対象",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "変動数",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "AddEXP",
+        "params": [
+          "VAR_NAME",
+          "C_ID",
+          "变动数"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VAR_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "VAR_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "C_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "变动数",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "SHIRAHU",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "BETWEENTIME",
+        "params": [
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "VISIT",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "睡眠時間",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "睡眠時間２",
+        "params": [
+          "ARG"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "SLEEPTIME",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "WAKEUPTIME",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "生活時間設定",
+        "params": [
+          "CHARA"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "時刻計算",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "兒童の睡眠時間",
+        "params": [
+          "ARG"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "兒童の起床時間",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "兒童の就寝時間",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "WORKING",
+        "params": [
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "連続実行",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "Counter不発指令",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ENDUFUFU",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ENDUFUFU_ALL",
+        "params": [],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ADD_EXP_LESNIAN",
+        "params": [
+          "UP_EXP",
+          "ARG",
+          "ARGS"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "UP_EXP",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "SAMESEX",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "HAS_PENIS",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_ANGRY",
+        "params": [
+          "ARG",
+          "刻印付与"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "刻印付与",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ALCOHOL_FACE",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ASK_YN",
+        "params": [
+          "ARGS:0",
+          "ARGS:1"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "PREV_REDRAW",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINTBUTTON_EX",
+        "params": [
+          "ARGS:0",
+          "ARG",
+          "ARG:1",
+          "ARG:2",
+          "ARG:3",
+          "ARG:4",
+          "ARG:5"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINTBUTTON_EXC",
+        "params": [
+          "ARGS:0",
+          "ARG",
+          "ARG:1",
+          "ARG:2",
+          "ARG:3"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "FISHER_YATES_SHAFFLE",
+        "params": [
+          "ARG:0"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "NEMUKE",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "时刻表示",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "時刻表示",
+        "params": [
+          "ARG"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "HOUR",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "MINUTE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "時刻",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CLOCK_TO_TIME",
+        "params": [
+          "HOUR",
+          "MINUTE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "HOUR",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "MINUTE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "TIMESTOP",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "KIGEN_CHANGE",
+        "params": [
+          "ARG",
+          "確率",
+          "傾向"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "確率",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "傾向",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "OTOKOGIRAI",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "NOTICE_LUST",
+        "params": [
+          "C_ID"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "C_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "NOTICE_CYCLE",
+        "params": [
+          "C_ID"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "C_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CHECK_CHARA",
+        "params": [
+          "C_ID",
+          "TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "TYPE",
+            "isString": true,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "C_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CHARA_COMPARE",
+        "params": [
+          "VAR_NAME",
+          "VAR_ID",
+          "CHARA_A",
+          "TYPE",
+          "CHARA_B"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VAR_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "VAR_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA_A",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TYPE",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA_B",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINT_RANK",
+        "params": [
+          "VAR_VALUE",
+          "RANK_SCALE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VAR_VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK_SCALE",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK_NUM",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CALC_RANK",
+        "params": [
+          "VAR_VALUE",
+          "RANK_SCALE",
+          "RANK",
+          "RANK_NUM"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VAR_VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK_SCALE",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK_NUM",
+            "isString": false,
+            "modifiers": "REF"
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINT_ALPHABET",
+        "params": [
+          "RANK",
+          "RANK_NUM",
+          "ARG"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK_NUM",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_RANK10",
+            "isString": true,
+            "modifiers": "CONST"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_RANK7",
+            "isString": true,
+            "modifiers": "CONST"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_RANK10_F",
+            "isString": true,
+            "modifiers": "CONST"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_RANK7_F",
+            "isString": true,
+            "modifiers": "CONST"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "C_RANK10",
+            "isString": true,
+            "modifiers": "CONST"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "C_RANK7",
+            "isString": true,
+            "modifiers": "CONST"
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "COLOR_PRINT",
+        "params": [
+          "ARGS",
+          "C_NAME",
+          "STR_NUM"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "C_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_NUM",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "BASE_BAR",
+        "params": [
+          "C_ID",
+          "BASE_NAME",
+          "BAR_LENGTH",
+          "COLOR_NAME",
+          "OP"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "C_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "BASE_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "BAR_LENGTH",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "COLOR_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "OP",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "BASE_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "BASE_BAR_2",
+        "params": [
+          "C_ID",
+          "BASE_NAME",
+          "BASE_NAME_SHORT",
+          "BAR_LENGTH",
+          "COLOR_NAME"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "C_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "BASE_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "BASE_NAME_SHORT",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "BAR_LENGTH",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "COLOR_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "BASE_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "COLOR_STAMP",
+        "params": [
+          "STAMP_NUM",
+          "MAX_NUM",
+          "STAMP_STR",
+          "STAMP_COLOR",
+          "ARG"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "STAMP_NUM",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "MAX_NUM",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STAMP_STR",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STAMP_COLOR",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STAMP_LENGTH",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "RAND_CHARASELECT",
+        "params": [
+          "L_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "L_TYPE",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA_LIST",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA_CNT",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CAN_MEET",
+        "params": [
+          "CHARA"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GETOUT",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "RAND_PERSON",
+        "params": [
+          "CHARA"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "HIT_CHARA",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_CHARAHOME",
+        "params": [
+          "CHARA"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_PLACENAME",
+        "params": [
+          "PLACE_ID",
+          "ARG"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "PLACE_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ARRAY_HIT",
+        "params": [
+          "HIT_LIST",
+          "LIST_SIZE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "HIT_LIST",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "LIST_SIZE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CHK_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "HIT_RAND",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ARRAY_RAND",
+        "params": [
+          "RAND_ARRAY",
+          "ARRAY_SIZE",
+          "RAND_MIN",
+          "RAND_MAX"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "RAND_ARRAY",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ARRAY_SIZE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RAND_MIN",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RAND_MAX",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ID_ARRAY",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "FUNC_FISHER_YATES_SHAFFLE",
+        "params": [
+          "ARRAY",
+          "ARRAY_SIZE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "ARRAY",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ARRAY_SIZE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ELE_SHAFFLE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINT_GROUP",
+        "params": [
+          "COMMENT",
+          "NUM_COMMENT",
+          "TIME_REDRAW"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "COMMENT",
+            "isString": true,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "NUM_COMMENT",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PREV_REDRAW",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TIME_REDRAW",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "NOW_COMMENT",
+            "isString": false,
+            "modifiers": "DYNAMIC"
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "DAY_TO_DATE",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "DATE_TO_DAY",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINT_DATE",
+        "params": [
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINT_DATE_F",
+        "params": [
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "STR_MULTI_COUNT",
+        "params": [
+          "TARGET_STR",
+          "KEY_STR"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "TARGET_STR",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "KEY_STR",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "KEY_LIST",
+            "isString": true,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "KEY_CNT",
+            "isString": false,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "KEY_NUM",
+            "isString": false,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "KEY_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_CNT",
+            "isString": false,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TEMP_STR",
+            "isString": true,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TEMP_NUM",
+            "isString": false,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TEMP_RESULT",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CNT_SPLIT",
+        "params": [
+          "TARGET_STR",
+          "STR_LIST",
+          "CNT_LIST",
+          "STR_NUM"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "TARGET_STR",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "NEW_STR",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_LIST",
+            "isString": true,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CNT_LIST",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_NUM",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TEMP_STR",
+            "isString": true,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TEMP_NUM",
+            "isString": false,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TEMP_RESULT",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TEMP_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_SORTED_CNT_SPLIT",
+        "params": [
+          "TARGET_STR",
+          "STR_LIST",
+          "CNT_LIST",
+          "STR_NUM",
+          "Sort"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "TARGET_STR",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_LIST",
+            "isString": true,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CNT_LIST",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_NUM",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "Sort",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "temp_i",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "temp_j",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "should_swap",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "temp_cnt",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "temp_str",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "同行人数",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "SUM_ALL_YOGORE",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "AVERAGE_YOGORE",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ROOM_NUM",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_ITEM",
+        "params": [
+          "ITEM_NAME",
+          "ITEM_NUM",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_NUM",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "LOST_ITEM",
+        "params": [
+          "ITEM_NAME",
+          "ITEM_NUM",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_NUM",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_MONEY_YEN",
+        "params": [
+          "VALUE",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_SPELL_CARD_BONUS_YEN",
+        "params": [
+          "VALUE",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_MONEY_CM",
+        "params": [
+          "VALUE",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "LOST_MONEY_YEN",
+        "params": [
+          "VALUE",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "LOST_MONEY_CM",
+        "params": [
+          "VALUE",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PAY_MONEY_YEN",
+        "params": [
+          "VALUE",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PAY_MONEY_CM",
+        "params": [
+          "VALUE",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ChangeABL",
+        "params": [
+          "C_ID",
+          "Aname",
+          "Avalue"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "C_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "A_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "Aname",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "Avalue",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "NOISE",
+        "params": [
+          "L_SEED",
+          "L_SCALE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SEED",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_VAL",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SCALE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "NOISE2",
+        "params": [
+          "L_SEED",
+          "L_SCALE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SCALE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SCALE2",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SEED",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "NOISE3",
+        "params": [
+          "L_SEED",
+          "L_SCALE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SCALE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SCALE2",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SEED",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "TEST_PRINTNOISE",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "金额表示",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "金額表示",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "三桁区切",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "数え方",
+        "params": [
+          "ITEM_NO",
+          "ITEM_NUM"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_NO",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_NUM",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "IS_LOVER",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ITEMSTOCK",
+        "params": [
+          "ARG",
+          "値段"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "値段",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CHOICE",
+        "params": [
+          "ARGS:0",
+          "ARGS:1",
+          "ARGS:2",
+          "ARGS:3",
+          "ARGS:4",
+          "ARGS:5",
+          "ARGS:6",
+          "ARGS:7",
+          "ARGS:8",
+          "ARGS:9",
+          "ARGS:10"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ASK_M",
+        "params": [
+          "ARGS:0",
+          "ARG:0",
+          "ARGS:1",
+          "ARG:1",
+          "ARGS:2",
+          "ARG:2",
+          "ARGS:3",
+          "ARG:3",
+          "ARGS:4",
+          "ARG:4",
+          "ARGS:5",
+          "ARG:5",
+          "ARGS:6",
+          "ARG:6",
+          "ARGS:7",
+          "ARG:7",
+          "ARGS:8",
+          "ARG:8"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "選択肢上限",
+            "isString": false,
+            "modifiers": "CONST"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PREV_REDRAW",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PAY_YEN_OR_CM",
+        "params": [
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_REVISION",
+        "params": [
+          "ARG:0",
+          "上限",
+          "上昇率"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "上限",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "上昇率",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_REVISION2",
+        "params": [
+          "ARG:0",
+          "上限",
+          "上昇率"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "上限",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "上昇率",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_REVISION3",
+        "params": [
+          "num",
+          "TH:0",
+          "TH:1",
+          "TH:2"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "TH",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "num",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINT_BASE",
+        "params": [
+          "ARGS",
+          "ARG:0",
+          "ARG:1",
+          "ARG:2"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "DRAW_INFORMATIONLINE",
+        "params": [
+          "ARGS",
+          "ARG",
+          "ARG:1"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "EQUAL",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "MINUS",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINT_EMUNERATE",
+        "params": [
+          "表示:1",
+          "条件:1",
+          "表示:2",
+          "条件:2",
+          "表示:3",
+          "条件:3",
+          "表示:4",
+          "条件:4",
+          "表示:5",
+          "条件:5"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "表示",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "条件",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "TEXTR",
+        "params": [
+          "ARGS",
+          "ARGS:1",
+          "ARGS:2",
+          "ARGS:3",
+          "ARGS:4",
+          "ARGS:5",
+          "ARGS:6"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "L_RESULT",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CHOICES",
+            "isString": true,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_ARRAY",
+            "isString": true,
+            "modifiers": "DYNAMIC"
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ONCE",
+        "params": [
+          "ARGS",
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "FIRSTTIME",
+        "params": [
+          "ARGS",
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "EXP_UP",
+        "params": [
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "INVAGINA",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "INANAL",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "HETEROSEX",
+        "params": [
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "NameToID",
+        "params": [
+          "ARGS"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_TARGETNUM",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "IN_ROOM_MEMBER",
+        "params": [
+          "ARGS",
+          "ARG",
+          "ARGS:1",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "TARGETSET_CHECK",
+        "params": [
+          "OP"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "OP",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TARGET_CNT",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "SWAP_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "TARGETSET_CHACK",
+        "params": [
+          "ARGS"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "性技補正",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "RECOVER",
+        "params": [
+          "ARG",
+          "回復量",
+          "ARGS",
+          "ARGS:1"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "BASE_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "回復量",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "RECOVER_PERMIL",
+        "params": [
+          "ARG",
+          "回復割合",
+          "ARGS",
+          "回復速度の影響",
+          "ARGS:1"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "回復割合",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "回復速度の影響",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "回復量",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "RECOVER_PERMIL_BOTH",
+        "params": [
+          "ARG",
+          "回復割合",
+          "ARGS",
+          "回復速度の影響",
+          "ARGS:1"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "回復割合",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "回復速度の影響",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CHECKE_BASE",
+        "params": [
+          "ARG",
+          "ARGS"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "BUFF_BASE",
+        "params": [
+          "ARG",
+          "強化能力",
+          "変動値",
+          "メッセージ"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "変動値",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "強化能力",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "メッセージ",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "BUFF_RESET",
+        "params": [],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CHANGE_CFLAG",
+        "params": [
+          "変動フラグ",
+          "対象",
+          "変動数"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "変動フラグ",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "対象",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "変動数",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "AddEXP",
+        "params": [
+          "VAR_NAME",
+          "C_ID",
+          "变动数"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VAR_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "VAR_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "C_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "变动数",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "SHIRAHU",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "BETWEENTIME",
+        "params": [
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "VISIT",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "睡眠時間",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "睡眠時間２",
+        "params": [
+          "ARG"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "SLEEPTIME",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "WAKEUPTIME",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "生活時間設定",
+        "params": [
+          "CHARA"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "時刻計算",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "兒童の睡眠時間",
+        "params": [
+          "ARG"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "兒童の起床時間",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "兒童の就寝時間",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "WORKING",
+        "params": [
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "連続実行",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "Counter不発指令",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ENDUFUFU",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ENDUFUFU_ALL",
+        "params": [],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ADD_EXP_LESNIAN",
+        "params": [
+          "UP_EXP",
+          "ARG",
+          "ARGS"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "UP_EXP",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "SAMESEX",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "HAS_PENIS",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_ANGRY",
+        "params": [
+          "ARG",
+          "刻印付与"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "刻印付与",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ALCOHOL_FACE",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ASK_YN",
+        "params": [
+          "ARGS:0",
+          "ARGS:1"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "PREV_REDRAW",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINTBUTTON_EX",
+        "params": [
+          "ARGS:0",
+          "ARG",
+          "ARG:1",
+          "ARG:2",
+          "ARG:3",
+          "ARG:4",
+          "ARG:5"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINTBUTTON_EXC",
+        "params": [
+          "ARGS:0",
+          "ARG",
+          "ARG:1",
+          "ARG:2",
+          "ARG:3"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "FISHER_YATES_SHAFFLE",
+        "params": [
+          "ARG:0"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "NEMUKE",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "时刻表示",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "時刻表示",
+        "params": [
+          "ARG"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "HOUR",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "MINUTE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "時刻",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CLOCK_TO_TIME",
+        "params": [
+          "HOUR",
+          "MINUTE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "HOUR",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "MINUTE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "TIMESTOP",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "KIGEN_CHANGE",
+        "params": [
+          "ARG",
+          "確率",
+          "傾向"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "確率",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "傾向",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "OTOKOGIRAI",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "NOTICE_LUST",
+        "params": [
+          "C_ID"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "C_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "NOTICE_CYCLE",
+        "params": [
+          "C_ID"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "C_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CHECK_CHARA",
+        "params": [
+          "C_ID",
+          "TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "TYPE",
+            "isString": true,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "C_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CHARA_COMPARE",
+        "params": [
+          "VAR_NAME",
+          "VAR_ID",
+          "CHARA_A",
+          "TYPE",
+          "CHARA_B"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VAR_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "VAR_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA_A",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TYPE",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA_B",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINT_RANK",
+        "params": [
+          "VAR_VALUE",
+          "RANK_SCALE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VAR_VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK_SCALE",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK_NUM",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CALC_RANK",
+        "params": [
+          "VAR_VALUE",
+          "RANK_SCALE",
+          "RANK",
+          "RANK_NUM"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VAR_VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK_SCALE",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK_NUM",
+            "isString": false,
+            "modifiers": "REF"
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINT_ALPHABET",
+        "params": [
+          "RANK",
+          "RANK_NUM",
+          "ARG"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RANK_NUM",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_RANK10",
+            "isString": true,
+            "modifiers": "CONST"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_RANK7",
+            "isString": true,
+            "modifiers": "CONST"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_RANK10_F",
+            "isString": true,
+            "modifiers": "CONST"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_RANK7_F",
+            "isString": true,
+            "modifiers": "CONST"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "C_RANK10",
+            "isString": true,
+            "modifiers": "CONST"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "C_RANK7",
+            "isString": true,
+            "modifiers": "CONST"
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "COLOR_PRINT",
+        "params": [
+          "ARGS",
+          "C_NAME",
+          "STR_NUM"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "C_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_NUM",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "BASE_BAR",
+        "params": [
+          "C_ID",
+          "BASE_NAME",
+          "BAR_LENGTH",
+          "COLOR_NAME",
+          "OP"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "C_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "BASE_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "BAR_LENGTH",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "COLOR_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "OP",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "BASE_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "BASE_BAR_2",
+        "params": [
+          "C_ID",
+          "BASE_NAME",
+          "BASE_NAME_SHORT",
+          "BAR_LENGTH",
+          "COLOR_NAME"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "C_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "BASE_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "BASE_NAME_SHORT",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "BAR_LENGTH",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "COLOR_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "BASE_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "COLOR_STAMP",
+        "params": [
+          "STAMP_NUM",
+          "MAX_NUM",
+          "STAMP_STR",
+          "STAMP_COLOR",
+          "ARG"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "STAMP_NUM",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "MAX_NUM",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STAMP_STR",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STAMP_COLOR",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STAMP_LENGTH",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "RAND_CHARASELECT",
+        "params": [
+          "L_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "L_TYPE",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA_LIST",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA_CNT",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CAN_MEET",
+        "params": [
+          "CHARA"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GETOUT",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "RAND_PERSON",
+        "params": [
+          "CHARA"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "HIT_CHARA",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_CHARAHOME",
+        "params": [
+          "CHARA"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "CHARA",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_PLACENAME",
+        "params": [
+          "PLACE_ID",
+          "ARG"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "PLACE_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ARRAY_HIT",
+        "params": [
+          "HIT_LIST",
+          "LIST_SIZE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "HIT_LIST",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "LIST_SIZE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CHK_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "HIT_RAND",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ARRAY_RAND",
+        "params": [
+          "RAND_ARRAY",
+          "ARRAY_SIZE",
+          "RAND_MIN",
+          "RAND_MAX"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "RAND_ARRAY",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ARRAY_SIZE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RAND_MIN",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "RAND_MAX",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ID_ARRAY",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "FUNC_FISHER_YATES_SHAFFLE",
+        "params": [
+          "ARRAY",
+          "ARRAY_SIZE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "ARRAY",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ARRAY_SIZE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ELE_SHAFFLE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINT_GROUP",
+        "params": [
+          "COMMENT",
+          "NUM_COMMENT",
+          "TIME_REDRAW"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "COMMENT",
+            "isString": true,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "NUM_COMMENT",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PREV_REDRAW",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TIME_REDRAW",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "NOW_COMMENT",
+            "isString": false,
+            "modifiers": "DYNAMIC"
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "DAY_TO_DATE",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "DATE_TO_DAY",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINT_DATE",
+        "params": [
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PRINT_DATE_F",
+        "params": [
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "STR_MULTI_COUNT",
+        "params": [
+          "TARGET_STR",
+          "KEY_STR"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "TARGET_STR",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "KEY_STR",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "KEY_LIST",
+            "isString": true,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "KEY_CNT",
+            "isString": false,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "KEY_NUM",
+            "isString": false,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "KEY_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_CNT",
+            "isString": false,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TEMP_STR",
+            "isString": true,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TEMP_NUM",
+            "isString": false,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TEMP_RESULT",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CNT_SPLIT",
+        "params": [
+          "TARGET_STR",
+          "STR_LIST",
+          "CNT_LIST",
+          "STR_NUM"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "TARGET_STR",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "NEW_STR",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_LIST",
+            "isString": true,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CNT_LIST",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_NUM",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TEMP_STR",
+            "isString": true,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TEMP_NUM",
+            "isString": false,
+            "modifiers": "DYNAMIC"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TEMP_RESULT",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "TEMP_ID",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_SORTED_CNT_SPLIT",
+        "params": [
+          "TARGET_STR",
+          "STR_LIST",
+          "CNT_LIST",
+          "STR_NUM",
+          "Sort"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "TARGET_STR",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_LIST",
+            "isString": true,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CNT_LIST",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "STR_NUM",
+            "isString": false,
+            "modifiers": "REF"
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "Sort",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "temp_i",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "temp_j",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "should_swap",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "temp_cnt",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "temp_str",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "同行人数",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "SUM_ALL_YOGORE",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "AVERAGE_YOGORE",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ROOM_NUM",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_ITEM",
+        "params": [
+          "ITEM_NAME",
+          "ITEM_NUM",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_NUM",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "LOST_ITEM",
+        "params": [
+          "ITEM_NAME",
+          "ITEM_NUM",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_NAME",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_NUM",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_MONEY_YEN",
+        "params": [
+          "VALUE",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_SPELL_CARD_BONUS_YEN",
+        "params": [
+          "VALUE",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_MONEY_CM",
+        "params": [
+          "VALUE",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "LOST_MONEY_YEN",
+        "params": [
+          "VALUE",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "LOST_MONEY_CM",
+        "params": [
+          "VALUE",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PAY_MONEY_YEN",
+        "params": [
+          "VALUE",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "PAY_MONEY_CM",
+        "params": [
+          "VALUE",
+          "PRINT_TYPE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "VALUE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "PRINT_TYPE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "ChangeABL",
+        "params": [
+          "C_ID",
+          "Aname",
+          "Avalue"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "C_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "A_ID",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "Aname",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "Avalue",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "NOISE",
+        "params": [
+          "L_SEED",
+          "L_SCALE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SEED",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_VAL",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SCALE",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "NOISE2",
+        "params": [
+          "L_SEED",
+          "L_SCALE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SCALE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SCALE2",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SEED",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "NOISE3",
+        "params": [
+          "L_SEED",
+          "L_SCALE"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SCALE",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SCALE2",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "L_SEED",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "TEST_PRINTNOISE",
+        "params": [
+          ""
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "金额表示",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "金額表示",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "三桁区切",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "数え方",
+        "params": [
+          "ITEM_NO",
+          "ITEM_NUM"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_NO",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ITEM_NUM",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "IS_LOVER",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_TERM",
+        "params": [
+          "ARG"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CALCULATE_ADD_TIME",
+        "params": [
+          "季節",
+          "日期",
+          "時刻",
+          "指定分"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "季節",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "日期",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "時刻",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "指定分",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "取得季節",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "取得日期",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "取得時刻",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "CALCULATE_ADD_TERM",
+        "params": [
+          "季節",
+          "ターム",
+          "指定ターム"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "季節",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "ターム",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "指定ターム",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "取得季節",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "取得ターム",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "WEATHER_FORECAST_1YEAR",
+        "params": [],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "WEATHER_FORECAST_1TERM",
+        "params": [],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "位置倍率",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "予想経過時間",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "日本海低気圧発生判定",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "南岸低気圧発生判定",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "WEATHER_FORECAST_1DAY",
+        "params": [],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_LOCATION_LOW",
+        "params": [],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_LOCATION_CUMULUS",
+        "params": [],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_LOCATION_AREA_TYPHOON",
+        "params": [],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "低気圧位置",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GENERATE_LINER_RAINBAND",
+        "params": [
+          "発生季節",
+          "発生日時",
+          "発生時間"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "発生季節",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "発生日時",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "発生時間",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "継続時間",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "到達時間",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_LOCATION_LINER_RAINBAND",
+        "params": [],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_WEATHER_WARNING_HEAVY_RAIN",
+        "params": [],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "低気圧位置",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "線状降水帯位置",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "積乱雲位置",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_WEATHER_WARNING_HEAVY_SNOWFALL",
+        "params": [],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "低気圧位置",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_WEATHER_WARNING_STORM",
+        "params": [],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "低気圧位置",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_WEATHER_WARNING_LIGHTNING",
+        "params": [],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "低気圧位置",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "線状降水帯位置",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "積乱雲位置",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_WEATHER_WARNING_COLD",
+        "params": [],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_WEATHER_WARNING_AVALANCHE",
+        "params": [],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "暴風情報",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_WEATHER_ADVISORY_probability_subsequent_WARNING",
+        "params": [],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "低気圧位置",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "線状降水帯位置",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "積乱雲位置",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_HEAT_THUNDERSTORM",
+        "params": [],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "積乱雲位置",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "線状降水帯位置",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "低気圧位置",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_FRONTAL_THUNDERSTORM",
+        "params": [],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "低気圧位置",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_WEATHER_THUNDERSTORM",
+        "params": [],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_NAME_WEATHER_TIMEZOME",
+        "params": [
+          "ARG",
+          "ARG:1"
+        ],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "SET_ABNORMAL_WEATHER",
+        "params": [],
+        "body": []
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "SET_MAP_WEATHER_BGCOLOR",
+        "params": [
+          "ARG",
+          "非幻想乡色光"
+        ],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "非幻想乡色光",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "CURRED",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "NEXTCOLOR",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "低気圧位置",
+            "isString": true,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "積乱雲位置",
+            "isString": true,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_現在気温",
+        "params": [],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "基礎気温",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "HOUR",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "現在マップ",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "現在お出かけマップ",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "高度補正",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "気流補正",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "建造物補正",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "日射補正",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "現在場所",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "補正温度",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "name": "GET_体感気温",
+        "params": [],
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "name": "現在の気温",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "体感気温",
+            "isString": false,
+            "modifiers": null
+          },
+          {
+            "type": "VariableDeclaration",
+            "name": "降水フラグ",
+            "isString": false,
+            "modifiers": null
+          }
+        ]
+      }
+    ]
+  }
+}

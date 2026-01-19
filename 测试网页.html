@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <script src='./era.js'></script>
+</head>
+<body>
+    <input type="file" id="fileInput">
+<div id="fileContent"></div>
+<a id="text"></a>
+<script>
+    
+
+  document.getElementById('fileInput').addEventListener('change', function(e) {
+    var file = e.target.files[0];
+    var reader = new FileReader();
+    
+    reader.onload = function(e) {
+      var contents = e.target.result;
+      if(reader.DONE==2){
+        a = new Gameparse()
+        a.parse(contents)
+        console.log(a.codelines);
+        document.getElementById('text').textContent = a.codelines
+      }
+    };
+
+    reader.readAsText(file);
+  });
+</script>
+    <script>
+
+    </script>
+</body>
+</html>
