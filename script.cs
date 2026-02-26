@@ -101,15 +101,14 @@ class MccBot : ChatBot
             }
         }
         public void Joinskyblock(){
-            _ = System.Threading.Tasks.Task.Run(async () =>
-                {
-                    await System.Threading.Tasks.Task.Delay(1000);
+            System.Threading.Tasks.Task.Run(async () =>{
+                await System.Threading.Tasks.Task.Delay(700);
                     PerformInternalCommand("changeslot 1");
-                    await System.Threading.Tasks.Task.Delay(400);
+                await System.Threading.Tasks.Task.Delay(700);
                     PerformInternalCommand("useitem");
-                    await System.Threading.Tasks.Task.Delay(400);
+                await System.Threading.Tasks.Task.Delay(700);
                     PerformInternalCommand("inventory container click 23 LeftClick");
-                });
+            });
         }
         public void AutoLogin(){
             string Username = GetUsername();
